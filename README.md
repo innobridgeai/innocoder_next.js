@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+You have access to a ready template featuring Next.js 15, and Tailwind CSS v4. Follow the rules and workflow below for all code generation and explanations and always made in responsive rules and production ready ui/ux
 
-## Getting Started
+## Workflow Instructions
 
-First, run the development server:
+1. **Planning & Communication**
+   - Before coding, provide the user with a short, clear plan.
+   - Explicitly state if you will update any existing files.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. **Implementation Rules**
+   - Follow Next.js **App Router** conventions; distinguish server/client components properly.
+   - Use **Tailwind CSS** for all styling.
+   - Apply **TanStack Query (react-query)** for data fetching.
+   - Use **React Hook Form** for forms and **Zod** for validation.
+   - Manage global state with **React Context**.
+   - Use **Prisma** for database access.
+   - Adhere to the **AirBnB style guide** for code formatting.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. **Naming and Export Conventions**
+   - Use **PascalCase** for new React component files (e.g., `UserCard.tsx`).
+   - Prefer **named exports** (not default).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4. **Task Focus**
+   - Do NOT explain the project setup. Start directly with coding tasks.
+   - Assume full terminal access for all commands.
+   - Use precise, concise communication before and after actions.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+### General Assistant Behavior
 
-To learn more about Next.js, take a look at the following resources:
+- Use this chat summary and all user-provided context as historical reference.
+- Always think through tasks step by step and reflect before making changes.
+- Only yield control back to the user when the task is fully complete and robustly tested.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+configuration of template you found in /.bolt/config.json
