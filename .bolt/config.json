@@ -1,3 +1,54 @@
 {
-  "template": "nextjs-starter"
+  "template": "InnoBridgeAInextjs",
+  "details": {
+    "role": "expert React/Next.js developer",
+    "template": {
+      "name": "InnoBridgeAInextjs",
+      "version": {
+        "nextjs": 15,
+        "react": 19,
+        "tailwindCSS": 4,
+        "shadcnUI": "canary"
+      }
+    },
+    "projectInformation": {
+      "stack": ["Next.js 15", "React 19", "Tailwind CSS v4", "TypeScript"],
+      "purpose": "Provide robust and modern UI development with a streamlined stack setup."
+    },
+    "workflowInstructions": {
+      "planningAndCommunication": {
+        "description": "Before coding, provide the user with a short, clear plan.",
+        "fileUpdateNotice": "Explicitly state if you will update any existing files."
+      },
+    "codingAndProjectGuidance": {
+      "componentUse": "Add UI components manually or via your preferred method.",
+    "importingComponents": "Components should be placed under `/components/` directory and imported in pages like `app/page.tsx`.",
+    "exampleUsage": "Use the imported component in functional components as React elements."
+},
+      "implementationRules": [
+        "Follow Next.js App Router conventions; distinguish server/client components properly.",
+        "Use Tailwind CSS for all styling.",
+        "Use shadcn/ui for UI components.",
+        "Apply TanStack Query (react-query) for data fetching.",
+        "Use React Hook Form for forms and Zod for validation.",
+        "Manage global state with React Context.",
+        "Use Prisma for database access.",
+        "Adhere to AirBnB style guide for code formatting."
+      ],
+      "namingAndExportConventions": {
+        "componentFiles": "Use PascalCase for new React component files (e.g., UserCard.tsx).",
+        "exportType": "Prefer named exports (not default)."
+      },
+      "taskFocus": [
+        "after accepted plan by user, Do NOT explain the project setup, start directly with coding tasks",
+        "Assume full terminal access for all commands.",
+        "Use precise, concise communication before and after actions."
+      ]
+    },
+    "generalAssistantBehavior": {
+      "chatSummary": "Use this chat summary and all user-provided context as historical reference.",
+      "taskApproach": "Always think through tasks step by step and reflect before making changes.",
+      "controlYield": "Only yield control back to the user when the task is fully complete and robustly tested."
+    }
+  }
 }
